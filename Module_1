@@ -1,0 +1,69 @@
+@@ -0,0 +1,68 @@
+# Module 1: Introduction to the Cloud
+
+## Client-Server Model
+- Client places a request
+- Server sends a response
+
+## What is Cloud Computing?
+- **Definition:** Delivery of IT resources on demand over the internet with pay-as-you-go.
+
+## Cloud Deployment Types
+- **On the Cloud**
+  1. Migrate data/resources to the Cloud
+  2. Develop applications
+     - Virtual servers
+     - Databases
+     - Networking components
+- **On-Premises**
+  1. Use resources locally with virtualization
+- **Hybrid**
+  1. Keep some applications on-premises due to regulations
+  2. Use the cloud for data processing and analytics
+
+- **Examples**
+  - **On the Cloud:** A startup runs its entire website and database on AWS.  
+  - **On-Premises:** A bank keeps sensitive financial data in its own datacenter.  
+  - **Hybrid:** Healthcare company stores patient data on-prem but uses AWS for analytics.
+
+## Key Benefits of Cloud Computing
+1. Trade fixed expenses for variable expenses
+2. Benefit from massive economic scale
+3. Stop guessing capacity
+4. Stop maintaining data centers
+5. Go global
+
+## AWS Regions
+- Geographical locations close to your users
+
+## Availability Zones (AZ)
+- Sectors within regions
+- Minimum 3 per region
+
+## Advantages
+- High availability → minimal downtime
+- Fault tolerance
+- Close to end users
+
+## Customer Responsibilities
+- **AWS Responsibilities:** Security *of* the cloud
+- **Shared Responsibilities:** Depends on service, vary by service
+- **Customer Responsibilities:** Manage workloads, store info, patching OS, configuring services securely, managing data.
+## Takeaways
+- Cloud computing = flexible, on-demand, pay-as-you-go resources.
+- AWS handles infrastructure; customers manage workloads and data.
+- Hybrid deployments help meet regulatory and compliance needs.
+## **key definitions:** 
+**Cloud Computing** Delivery of IT resources (servers, storage, databases, networking, software) on demand via the internet with pay-as-you-go pricing.
+**Elasticity** The ability of a cloud system to automatically adjust resources to match demand (scale up or down as needed).
+**Scalability** The ability to increase or decrease capacity manually or automatically to handle workload growth.
+**High Availability (HA)** Designing systems to remain operational with minimal downtime, even if part of the infrastructure fails.
+**Fault Tolerance (FT)** Designing systems so that they continue to operate correctly even if one or more components fail.
+**Regions** Geographical areas in which AWS provides services (e.g., US East, Europe). Each region is isolated from others.
+**Availability Zones (AZs)** One or more discrete data centers within a region, designed for fault isolation. Usually a minimum of 3 per region.
+**Edge Locations** Locations used by AWS for caching and content delivery (CloudFront) to reduce latency for end users.
+**Client-Server Model** A computing model where the client requests resources or services, and the server provides them.
+**Shared Responsibility Model** Security and compliance responsibility is shared between AWS (security of the cloud) and the customer (security in the cloud).
+**On-Premises Deployment** Running applications and services in your own data centers, using local infrastructure.
+**Cloud Deployment** Running applications fully in the cloud (AWS-managed resources).
+**Hybrid Deployment** A combination of cloud and on-premises deployment to meet business, regulatory, or performance requirements.
