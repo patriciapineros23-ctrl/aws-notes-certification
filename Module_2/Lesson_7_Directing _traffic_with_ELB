@@ -1,0 +1,52 @@
+# Module 2 – Lesson 7: Directing Traffic with Elastic Load Balancing
+
+## What is Elastic Load Balancing (ELB)?
+- **Service that automatically distributes incoming application traffic** across multiple EC2 instances, containers, or IP addresses.
+- Improves **availability**, **fault tolerance**, and **scalability** of applications.
+
+---
+
+## Key Benefits
+1. **High Availability**
+   - If one instance fails, ELB redirects traffic to healthy instances.
+2. **Scalability**
+   - Works with **Auto Scaling** to distribute load as more instances are added.
+3. **Fault Tolerance**
+   - Prevents overload on a single instance.
+4. **Health Checks**
+   - Continuously monitors instance health and stops routing to unhealthy ones.
+
+---
+
+## Types of Load Balancers
+1. **Application Load Balancer (ALB)**
+   - Operates at **Layer 7 (HTTP/HTTPS)**.
+   - Routes traffic based on **content** (URL path, host header).
+   - Best for **web apps, microservices, containers**.
+
+2. **Network Load Balancer (NLB)**
+   - Operates at **Layer 4 (TCP/UDP)**.
+   - Handles **millions of requests per second** with ultra-low latency.
+   - Best for **high-performance, latency-sensitive apps**.
+
+3. **Classic Load Balancer (CLB)**
+   - Legacy option.
+   - Works at both **Layer 4 & 7**.
+   - Being phased out; use ALB or NLB instead.
+
+---
+
+## Example Use Case
+- A video streaming service uses:
+  - **ALB** to route web requests (HTTPS) to application servers.
+  - **NLB** for high-throughput video streaming connections.
+  - Auto Scaling adds/removes servers during peak traffic.
+
+---
+
+## Exam Tips
+- **ALB = Layer 7, smart routing (web apps).**  
+- **NLB = Layer 4, high performance (gaming, real-time apps).**  
+- **CLB = legacy, don’t recommend for new apps.**  
+- **Health checks** ensure traffic only goes to healthy instances.  
+- ELB + Auto Scaling = **resilient, elastic architecture**.  
